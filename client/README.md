@@ -1,12 +1,33 @@
-# React + Vite
+# 📨 Real-Time Chat App (MERN Stack)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time chat application built using the MERN stack (MongoDB, Express, React, Node.js) and Socket.IO. Users can register, search for other users, send friend requests, chat one-on-one or in groups, and manage conversations. Includes admin access with secret-key protection to monitor activity.
 
-Currently, two official plugins are available:
+## 🔧 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication (JWT-based)
+- Friend request system with notifications
+- Real-time messaging (Socket.IO)
+- File and image sharing
+- Group chats with admin roles
+- Admin dashboard for monitoring (secret key protected)
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React, Tailwind CSS / MUI
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB + Mongoose
+- **Real-time**: Socket.IO
+- **Auth**: JWT
+
+## 📦 How to Run
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/chat-app.git
+cd chat-app
+
+# Install dependencies
+npm install
+
+# Start both client and server
+npm run dev
