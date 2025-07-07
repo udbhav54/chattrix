@@ -14,7 +14,7 @@ export const VisuallyHiddenInput =
     width: "1px",
   });
 
-  const Link = styled(LinkComponent)`
+  export const Link = styled(LinkComponent)`
     text-decoration: none;
     color: black;
     padding: 1rem;
