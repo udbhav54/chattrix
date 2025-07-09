@@ -9,7 +9,7 @@
 // export const matBlack = "#1c1c1c";
 // export const bgGradient = "linear-gradient(rgb(255 225 209), rgb(249 159 159))";
 
-// export const purple = "rgba(75,12,192,1)";
+// export const purple = "rgba(234, 112, 112,0.2)";
 // export const purpleLight = "rgba(75,12,192,0.2)";
 
 // constants/color.ts
@@ -17,8 +17,10 @@
 // ─── Brand / Primary ────────────────────────────────────────────────
 export const primary = "#4F46E5";          // indigo‑violet (AA‑compliant)
 
+export const orange = "#ea7070";
+
 // ─── Accents ────────────────────────────────────────────────────────
-export const orangeLight = "rgba(249, 115, 22, 0.15)"; // soft warm accent
+export const orangeLight = "rgba(234, 112, 112,0.2)"; // soft warm accent
 export const lightBlue    = "#38BDF8";                 // modern sky‑blue
 
 // ─── Neutrals & Surfaces ────────────────────────────────────────────
