@@ -14,6 +14,7 @@ import { VisuallyHiddenInput } from "../components/styles/StyledComponents";
 // import { useInputValidation, useStrongPassword } from "6pp";
 import { useFileHandler, useInputValidation } from "6pp";
 import { usernameValidator } from "../utils/validators";
+import { bgGradient } from "../constants/color";
 
 const Login = () => {
   // const [isLogin, setIsLogin] = React.useState(true); in this way we use recat component
@@ -39,9 +40,7 @@ const Login = () => {
   return (
     <div
       style={{
-        // backgroundImage:"linear-gradient(rgb(255, 225, 209), rgb(249, 159, 159))",
-        // backgroundImage: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        backgroundImage: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+        backgroundImage: bgGradient,
         minHeight: "100vh",
       }}
     >
@@ -231,11 +230,7 @@ const Login = () => {
                   onChange={password.changeHandler}
                 />
 
-                {/* {password.error && (
-                <Typography color="error" variant="caption">
-                  {password.error}
-                </Typography>
-              )} */}
+              
 
                 <Button
                   sx={{

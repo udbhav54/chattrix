@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import Header from "./Header";
 import Title from "../shared/Title";
 import ChatList from "../specific/ChatList";
-import { samepleChats } from "../../constants/sampleData";
+import { sampleChats } from "../../constants/sampleData";
 import { useParams } from "react-router-dom"; // 👈 add this
 import Profile from "../specific/Profile";
 
@@ -23,13 +23,29 @@ const AppLayout = (WrappedComponent) => {
 
         <Grid container sx={{ height: "calc(100vh - 4rem)" }}>
           {/* LEFT SIDEBAR */}
-          <Grid
+          {/* <Grid
             size={{ sm: 4, md: 3 }}
             sx={{ display: { xs: "none", sm: "block" } }}
           >
             <ChatList
-              chats={samepleChats}
+              chats={sampleChats}
               chatId={chatId} // ← now dynamic
+              handleDeleteChat={handleDeleteChat}
+            />
+          </Grid> */}
+
+          {/* LEFT SIDEBAR */}
+          <Grid
+            size={{ sm: 4, md: 3 }}
+            sx={{
+              display: { xs: "none", sm: "flex" }, // ← use flex, not block
+              flexDirection: "column", // ← vertical layout
+              height: "100%", // ← inherit 100% from container
+            }}
+          >
+            <ChatList
+              chats={sampleChats}
+              chatId={chatId}
               handleDeleteChat={handleDeleteChat}
             />
           </Grid>
