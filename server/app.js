@@ -1,7 +1,8 @@
 import express from "express";
-import userRoute from "./routes/user.routes.js"
+import userRoute from "./routes/user_routes.js"
 import {connectDB} from "./utils/features.js"
 import dotenv from "dotenv"
+import { errorMiddleware } from "./middlewares/error.js";
 
 dotenv.config({
   path: "./.env"
@@ -35,7 +36,8 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 })
 
-
+// error middleware
+app.use(errorMiddleware)
 
 
 app.listen(port, () => {
